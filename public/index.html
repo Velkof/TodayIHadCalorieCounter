@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Today I Had</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+			<div id="header">  
+				<nav>
+					<p id="siteName">TodayIHad</p>
+				</nav>
+			</div>
+
+
+			<div id="content"> 
+
+				<div class="formSearch">
+					<form action="" method="get">
+									<input type="text" name="search" id="searchBox"> </input>
+
+					</form>
+				</div>
+
+				<form id="form">
+							Name:  <input type="text" name="name" id="name"></input> <br/><br/>
+							Email: <input type="email" name="email" id="email"></input> <br/><br/>
+							Phone: <input type="number" name="number" id="number"></input> <br/><br/>
+							<input type="submit" value="submit" id="submit" id="action"></input>
+				</form>
+
+				<br/><br/>
+
+				<div id="tableDiv">
+
+					<table id="header-fixed">					
+						<th id="foodName">Food Name</th>
+						<th id="grams">Grams</th>
+						<th id="calories">Calories</th>
+						<th id="action">Action</th>
+					</table>
+
+					<table id="myTable">
+						<tr>
+						</tr>
+					</table>
+				</div>
+				<div id="resultDiv">
+					<p>Today's total is 1780 calories.</p>
+				</div>
+
+
+			</div>
+			<div class="push"></div>
+
+			<div id="footer">
+				
+			</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
