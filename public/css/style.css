@@ -1,0 +1,491 @@
+
+body {
+	color: #383838;
+	font-family: Arial;
+	margin: 0px;
+	min-width: 550px;
+	background-color: #FCFCFC;
+}
+
+/*NAVIGATION*/
+
+
+
+#header {
+	background-color: #22558C;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+nav {
+	width: 75%;
+	height: 50px;
+	margin: 0 auto;
+}
+
+#siteName {
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	color: white;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+#navButtons {
+	float: right;
+	width: 61%;
+}
+
+#navButtons input {
+	height: 40px;
+	margin-left: 0px;
+	margin-top: 10px;
+	border-collapse: collapse;
+	color: white;
+	font-weight: bold;
+	background-color: #22558C;
+	border-style:none;
+	float:right;
+	outline: none;
+
+
+}
+
+/*#navButtons > input:last-child {
+	background-color: #FCFCFC;
+	color: #22558C;
+
+}
+*/
+/*CONTENT DIV*/
+
+
+#content {
+	width: 75%;
+	min-height:100%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/*SEARCH*/
+
+.formSearch {
+	background-color:  white;
+	width: 100%;
+	padding: 0px;
+	border-radius: 3px;
+}
+
+#searchBox {
+	border: 6px solid #376CA3;
+	border-radius: 3px;
+	width: 98.7%;
+	height: 30px;
+	font-size: 1.4rem;
+	text-indent: 5px;
+}
+
+#resultsDiv {
+	position: absolute;
+	width: 75%;
+	max-height:200px;
+	overflow: auto;
+	min-width: 420px;
+
+}
+
+#searchResultsUL {
+	z-index: 9;
+	position: relative;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+
+}
+
+li {
+	background-color: #F5F9FA;
+	border-bottom: 1px solid lightgray;
+	padding-left: 10px;
+}
+
+
+/*INFO*/
+
+
+#infoDiv {
+	margin-bottom: 35px;
+	margin-top: 30px;
+	height: 200px;
+
+}
+
+#infoDivLeft {
+	width: 48%;
+	height: 200px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	float: left;
+	color: #FAFAFA;
+	margin-bottom: 30px;
+	background-color: white;
+
+}
+
+#infoDivRight {
+	width: 48%;
+	height: 200px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	float: right;
+	color: #FAFAFA;
+	margin-bottom: 30px;
+	background-color: white;
+
+
+}
+
+#infoDivLeftTop, #infoDivRightTop {
+	height: 25px;
+	width: 100%;
+	background-color: #376CA3;
+	font-weight: bold;
+	text-indent: 5px;
+	text-align: left;
+	padding-top: 5px;
+	margin: 0px;
+	display: inline-block;
+}
+
+
+#daysTotalsDiv {
+	color: black;
+	padding-top: 7px;
+	padding-left: 5px;
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+#daysTotalsDiv > p {
+	margin: 0px;
+
+}
+
+#infoDivLeftBottom {
+	width: 100px;
+	height: 70px;
+}
+
+
+.chooseDate{
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+	outline: none;
+}
+
+#choosePrevDate, #chooseNextDate {
+	font-weight: normal;
+	display:inline;
+	outline: none;
+}
+
+
+#today {
+	margin-left: 83px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.chooseDate {
+	background-color: #376CA3;
+	color: white;	
+	font-weight: bold;
+	height: 100%;
+	font-size: 18px;
+	border-style:none;
+
+
+}
+
+#datepicker {
+	font-size:15px;
+	width:270px;
+	height: 270px;
+	background-color: #F0F5F7;
+	position: absolute;
+	color: black;
+	border: 1px solid #97BDC9;
+	display: none;
+
+}
+
+#infoDivRightBtmContainer {
+	margin: 0 auto;
+	min-width: 500px;
+	max-width: 700px;
+}
+
+#mycanvas{
+	width: 160px;
+	height: 160px;
+	float: right;
+	margin-top: 9px;
+}
+
+#barChart{
+	width: 97.5%;
+	margin: 1.5%;
+	margin-left: 6%;
+}
+
+#dayInfo{
+	width: 175px;
+	height: 160px;
+	float: left;
+	margin-top: 7px;
+	font-size: 16px;
+	margin-left: 20px;
+/*	border: 1px solid red;
+*/}
+
+#dayInfoTable tr {
+	border-bottom: 1px solid lightgray;
+}
+
+#dayInfoTable tr > td {
+	width: 50px;
+	height: 22px;
+}
+
+#dayInfoKcal {
+	padding-top: 12px;
+	font-size: 17px;
+	color: #35383B;
+}
+
+#dayInfoProtein {
+	color: #5072AD;
+}
+
+#dayInfoCarbs {
+	color: #C4472B;
+}
+
+#dayInfoFat{
+	color:#64A177;
+}
+
+/*TABLE*/
+
+#tableDiv {
+	margin-bottom: 30px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	padding: 0px;
+	clear: both;
+}
+
+table {
+	font-size: 15px;
+	table-layout: fixed;
+	width: 100%;
+  	margin: 0 auto;
+	text-align: left;
+	border-collapse:collapse;
+	padding: 0px;
+
+}
+
+#header-fixed  th {
+	height: 30px;
+	background-color: #376CA3;
+	color: #FAFAFA;
+}
+
+
+#myTable td {
+	height: 30px;
+}
+
+.foodName{
+	width: 55%;
+	word-wrap:break-word;
+	padding-left: 5px;
+  	border-top-left-radius: 3px;
+}
+
+.additionalInfo{
+	text-indent: 5px;
+}
+
+.additionalInfoNotSaved {
+	display: none;
+}
+
+
+#myTable tr:nth-child(4n+3):not(.emptyRows) {
+	background-color: #F0F5F7;
+}
+
+/*.emptyRows:nth-last-child(even) {
+	background-color: #F0F5F7;
+}*/
+
+.action {
+	width: 15%;
+	word-wrap:break-word;
+  	border-top-right-radius: 3px;
+
+}
+
+.action input {
+	outline: none;
+}
+
+.grams, .calories {
+	width: 15%;
+	word-wrap:break-word;
+
+}
+
+.dateadded {
+	display: none;
+}
+
+.customFoodId {
+	display: none;
+}
+
+
+/*FOOTER*/
+
+#footer {
+
+	width: 75%;
+	height: 100px;
+	background-color: #22558C;
+	margin: 0 auto;
+	margin-top: 50px;
+	bottom:0;
+	left: 12.5%;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width: 1200px) {
+
+	#infoDivRight {
+		width: 100%;
+
+	}
+
+	#infoDivLeft {
+		display: none;
+	}
+
+	#infoDivRightTop{
+		text-align: center;
+	}
+
+	#datepicker {
+		left: 34%;
+	}
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #content, nav, #footer {
+		width: 95%;
+	}
+
+	#resultsDiv {
+		width:95.5%;
+		min-width: 520px;
+	}
+
+	#infoDivLeft {
+		display: none;
+	}
+
+	#infoDivRight {
+		width: 100%;
+	}
+
+	#infoDivRightTop{
+		text-align: center;
+	}
+
+	#datepicker {
+		left: 34%;
+	}
+
+	.grams, {
+		width: 26%;
+	}
+
+	.calories {
+		width: 11%;
+	}
+	
+	.action {
+		width: 13%;
+	}
+
+}
+
+
+
+
+
+
+
+
+/*Add Food*/
+
+#addFoodContent {
+	margin: 0 auto;
+	width: 75%;
+	height: 700px;
+}
+
+#addFoodBtn {
+	background-color: #FCFCFC;
+	color: #22558C;
+}
+
+#addFoodFormContainer{
+	margin-top: 50px;
+
+}
+
+#formExplanation {
+	font-size: 12px;
+}
+
+/*CUSTOM FOOD TABLE*/
+
+#tableCustomFoodContainer{
+	margin-top: 50px;
+}
+
+#customFoodTableHeader  th {
+	background-color: white;
+	border: 1px solid lightgray;
+}
+
+#customFoodTable tr {
+	border-bottom: 1px solid lightgray;
+}
+
+.customFoodName {
+	width: 50%;
+}
+
